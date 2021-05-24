@@ -1,0 +1,31 @@
+h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
+    font-family: $brand_font_family;
+    font-weight: $brand_font_weight;
+    text-transform: uppercase;
+
+    color: $dark_text_color;
+}
+
+h1,.h1 {
+    font-size: 48px;
+    line-height: 52px;
+}
+h2,.h2 {
+    font-size: 32px;
+    line-height: 36px;
+}
+
+.section_title {
+    font-size: $section_font_size;
+    text-align: center;
+
+    flex: 100%;
+
+    margin-bottom: 8px;
+}
+
+body {
+    font-family: $main_font_family;
+    font-weight: $main_font_weight;
+    font-size: $main_font_size;
+}

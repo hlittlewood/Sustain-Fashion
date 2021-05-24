@@ -1,0 +1,17 @@
+@font-face {
+    font-family: "Inter";
+    src: url("../typefaces/Inter-Regular.woff2") format("woff2"),
+         url("../typefaces/Inter-Regular.woff2") format("woff2");
+    font-weight: 900;
+}
+
+@supports (font-variation-settings: normal) {
+    @font-face {
+        font-family: "Inter var";
+        src: url("../typefaces/Inter.ttf") format("truetype-variations");
+        font-weight: 100 900;
+    }
+}
+
+// Not the best way of doing this, but I couldn't find the proper sources for this font.
+@import url('https://fonts.googleapis.com/css2?family=Squada+One&display=swap');

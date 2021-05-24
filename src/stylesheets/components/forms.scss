@@ -1,0 +1,31 @@
+.newsletter_form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 8px;
+
+    width: 60%;
+}
+
+input {
+    flex: 3;
+    height: 36px;
+    padding: 0 8px;
+
+    font-family: $main_font_family;
+    font-size: $main_font_size;
+    font-weight: 600;
+    line-height: 20px;
+    color: $dark_text_color;
+
+    border: 2px solid;
+    border-color: $border_color;
+    border-radius: 4px;
+}
+
+button {
+    @include button($ui_background_color, $brand_color);
+
+    flex: 1;
+}

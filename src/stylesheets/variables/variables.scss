@@ -1,0 +1,31 @@
+// Typography
+
+$brand_font_family: 'Squada One', 'Inter var', 'Inter', sans-serif;
+$brand_font_weight: 100;
+
+$main_font_family: 'Inter var', 'Inter', sans-serif;
+$main_font_weight: 400;
+$main_font_size: 16px;
+
+$section_font_size: 40px;
+$title_font_size: 32px;
+
+
+// Scale & Sizes
+
+$small_screen_breakpoint: 1224px;
+$tablet_breakpoint: 880px;
+$mobile_breakpoint: 425px;
+
+
+// Colours
+
+$page_background_color: #F9FAFB;
+$ui_background_color: #F3F4F6;
+
+$border_color: #D4D4D8;
+
+$brand_color: #164E63;
+
+$dark_text_color: #111827;
+$light_text_color: $ui_background_color;
