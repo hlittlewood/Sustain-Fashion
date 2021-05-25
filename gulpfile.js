@@ -27,13 +27,20 @@ function typography(done) {
     done();
 }
 
+function javascript(done) {
+    gulp.src('./src/scripts/*')
+        .pipe(gulp.dest('./dist/scripts'));
+    done();
+}
+
 function watch() {
     gulp.watch('./src/**/*.html', html);
     gulp.watch('./src/stylesheets/**/*.scss', stylesheet);
+    gulp.watch('./src/scripts/*.js', javascript);
 }
 
-var compile = gulp.parallel(html, stylesheet);
-var build = gulp.parallel(watch, html, stylesheet);
+var compile = gulp.parallel(html, stylesheet, javascript);
+var build = gulp.parallel(watch, html, stylesheet, javascript);
 
 gulp.task('typography', typography);
 gulp.task('default', build);

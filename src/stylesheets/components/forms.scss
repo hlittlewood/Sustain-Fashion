@@ -5,11 +5,11 @@
     flex-direction: row;
     gap: 8px;
 
-    width: 60%;
+    width: 40%;
 }
 
 input {
-    flex: 3;
+    flex: 1;
     height: 36px;
     padding: 0 8px;
 
@@ -26,6 +26,10 @@ input {
 
 button {
     @include button($ui_background_color, $brand_color);
+}
 
-    flex: 1;
+@media all and (max-width: $tablet_breakpoint) {
+    .newsletter_form {
+        width: 60%;
+    }
 }

@@ -46,9 +46,6 @@
 }
 
 .menu_item {
-	vertical-align: top;
-  	display: inline-block;
-	
 	a {
 		text-decoration: none;
 		display: block;
@@ -107,6 +104,9 @@
 @media all and (max-width: $tablet_breakpoint) {
 	#site_navbar {
 		height: 60px;
+		position: sticky;
+		top: 0;
+		z-index: 100;
 	}
 
 	.desktop_navbar {

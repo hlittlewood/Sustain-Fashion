@@ -1,0 +1,77 @@
+#sidebar {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 0;
+    height: 100%;
+    z-index: 1000;
+
+    background-color: $ui_background_color;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    transition: width 0.15s ease-in;
+}
+
+.sidebar_menu {
+    width: 100%;
+    flex: 2;
+    padding: 8px 8px;
+
+    display: flex;
+	flex-direction: column;
+	align-items: center;
+
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.sidebar_item {
+    width: 100%;
+    text-align: center;
+
+    cursor: pointer;
+
+	a {
+		text-decoration: none;
+		display: block;
+		padding: 16px 8px;
+		
+		color: $dark_text_color;
+		font-family: $main_font_family;
+		text-transform: uppercase;
+		font-size: $main_font_size;
+
+        &:hover {
+            background-color: $ui_background_hover_color;
+        }
+	}
+}
+
+.sidebar_dropdown {
+    margin-left: 0;
+    padding-left: 16px;
+
+    list-style: none;
+    border-left: 1px solid;
+    border-color: $border_color;
+
+    display: none;
+
+    li a {
+        font-size: 14px;
+        text-align: left;
+    }
+}
+
+.sidebar_contacts {
+    flex: 1;
+    justify-self: last;
+
+    display: flex;
+
+
+}
