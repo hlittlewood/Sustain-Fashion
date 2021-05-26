@@ -1,6 +1,7 @@
 const nav_toggle = document.querySelector("#nav_toggle");
 const sidebar = document.querySelector("#sidebar");
 const dropdown_toggle = document.querySelectorAll(".dropdown_toggle");
+const item_dropdown = document.querySelectorAll(".item_dropdown");
 
 nav_toggle.addEventListener('click', function () {
     var target_width = "100%";
@@ -23,5 +24,16 @@ dropdown_toggle.forEach(item => {
         } else {
             dropdown.style.display = "block";
         }
+    }); 
+});
+
+item_dropdown.forEach(item => {
+    item.addEventListener("mouseenter", function( event ) {
+        var dropdown = item.lastElementChild;
+            dropdown.style.display = "flex";
+    }); 
+    item.addEventListener("mouseleave", function( event ) {
+        var dropdown = item.lastElementChild;
+            dropdown.style.display = "none";
     }); 
 });

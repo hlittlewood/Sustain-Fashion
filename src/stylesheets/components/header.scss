@@ -81,6 +81,41 @@
 	color: $brand_color;
 }
 
+
+// I don't really like how this looks.
+.dropdown_menu {
+	position: absolute;
+	top: 80px;
+	left: 0;
+	right: 0;
+	padding: 8px 64px;
+
+	display: none;
+	flex-direction: row;
+	align-items: stretch;
+
+	background-color: $ui_background_color;
+	border-bottom: 1px solid;
+	border-color: $border_color;
+
+	width: 100%;
+}
+
+.dropdown_list {
+	margin-left: 0;
+    padding-left: 16px;
+
+	flex: 1;
+
+    list-style: none;
+    border-left: 1px solid;
+    border-color: $border_color;
+
+    li a {
+        text-align: left;
+    }
+}
+
 @media all and (max-width: $small_screen_breakpoint) {
 	#site_navbar {
 		height: 160px;
@@ -99,6 +134,9 @@
 		order: 2;
 	}
 
+	.dropdown_menu {
+		top: 160px;
+	}
 }
 
 @media all and (max-width: $tablet_breakpoint) {

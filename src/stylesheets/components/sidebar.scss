@@ -8,7 +8,7 @@
 
     background-color: $ui_background_color;
 
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
@@ -67,11 +67,8 @@
     }
 }
 
-.sidebar_contacts {
-    flex: 1;
-    justify-self: last;
-
-    display: flex;
-
-
+@media all and (max-width: $tablet_breakpoint) {
+    #sidebar {
+        display: flex;
+    }
 }
