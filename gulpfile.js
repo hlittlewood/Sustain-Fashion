@@ -1,7 +1,6 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
-var rename = require("gulp-rename");
 var cleanCSS = require('gulp-clean-css');
 
 sass.compiler = require('node-sass');

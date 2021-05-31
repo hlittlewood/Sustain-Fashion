@@ -1,22 +1,23 @@
 h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
-    font-family: $brand_font_family;
-    font-weight: $brand_font_weight;
+    font-family: $font_family_brand;
+    font-weight: $font_weight_brand;
     text-transform: uppercase;
-
-    color: $dark_text_color;
 }
 
 h1,.h1 {
-    font-size: 48px;
-    line-height: 52px;
+    font-size: $font_size_h1;
+    line-height: $line_height_h1;
 }
 h2,.h2 {
-    font-size: 32px;
-    line-height: 36px;
+    font-size: $font_size_h2;
+    line-height: $line_height_h2;
+}
+h3,.h3 {
+    font-size: $font_size_h3;
+    line-height: $line_height_h3;
 }
 
 .section_title {
-    font-size: $section_font_size;
     text-align: center;
 
     flex: 100%;
@@ -24,8 +25,13 @@ h2,.h2 {
     margin-bottom: 8px;
 }
 
-body {
-    font-family: $main_font_family;
-    font-weight: $main_font_weight;
-    font-size: $main_font_size;
+body,input {
+    font-family: $font_family_main;
+    font-weight: $font_weight_main;
+    font-size: $font_size_main;
+    color: $textColor_black;
+}
+
+a {
+    color: $textColor_black;
 }

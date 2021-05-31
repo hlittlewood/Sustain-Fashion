@@ -1,0 +1,51 @@
+button {
+    height: 36px;
+    min-width: 128px;
+    background-color: $buttonColor_default;
+
+    font-size: 16px;
+    font-weight: 600;
+    color: $textColor_black;
+
+    border: 2px solid $buttonColor_default_border;
+    border-radius: 4px;
+
+    transition: background-color 0.5s ease-in;
+
+    &:hover {
+        background-color: $buttonColor_defaultHover;
+    }
+}
+
+.url_button {
+    height: 36px;
+    padding: 8px 16px;
+    min-width: 128px;
+    background-color: $buttonColor_default;
+
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    color: $textColor_black;
+
+    border: 2px solid $buttonColor_default_border;
+    border-radius: 4px;
+
+    transition: background-color 0.5s ease-in;
+
+    &:hover {
+        background-color: $buttonColor_defaultHover;
+    }
+}
+
+.primary_button {
+    background-color: $buttonColor_primary;
+    color: $textColor_white;
+
+    border-color: $buttonColor_primary_border;
+
+    &:hover {
+        background-color: $buttonColor_primaryHover;
+    }
+}

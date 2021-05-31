@@ -1,10 +1,5 @@
 .horizontal_list {
-    display: flex;
-    flex-direction: row;
-    align-content: flex-start;
-    flex-wrap: wrap;
-
-    gap: 32px;
+    @include flex($flex-wrap: wrap, $align-content: flex-start, $gaps: 32px);
 }
 
 .category_item {
@@ -28,13 +23,11 @@
     @extend .category_item;
 
     height: 496px;
-    background-color: $ui_background_color;
+    background-color: $backgroundColor_grey_dark;
     border: 1px solid;
 	border-color: $border_color;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex($flex-direction: column, $align-items: center);
 
     .item_photo {
         @extend .item_photo;
@@ -44,10 +37,7 @@
 }
 
 .item_title {
-    font-family: $brand_font_family;
-    font-size: $title_font_size;
-    text-transform: uppercase;
-    color: $dark_text_color;
+    @extend .h3;
     text-decoration: none;
     text-align: center;
 }
@@ -62,13 +52,10 @@
     background-color: rgba($brand_color, 0.25);
     background-blend-mode: multiply;
 
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
+    @include flex($justify-content: center, $align-items: center);
 
     @extend .item_title;
-    color: $light_text_color;
+    color: $textColor_white;
 
     transition: background-color 0.5s ease-in;
 

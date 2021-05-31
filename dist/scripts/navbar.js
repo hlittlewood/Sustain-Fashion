@@ -28,11 +28,11 @@ dropdown_toggle.forEach(item => {
 });
 
 item_dropdown.forEach(item => {
-    item.addEventListener("mouseenter", function( event ) {
+    item.addEventListener("mouseenter", function() {
         var dropdown = item.lastElementChild;
             dropdown.style.display = "flex";
     }); 
-    item.addEventListener("mouseleave", function( event ) {
+    item.addEventListener("mouseleave", function() {
         var dropdown = item.lastElementChild;
             dropdown.style.display = "none";
     }); 

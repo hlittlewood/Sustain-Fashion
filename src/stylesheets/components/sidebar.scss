@@ -6,12 +6,10 @@
     height: 100%;
     z-index: 1000;
 
-    background-color: $ui_background_color;
+    background-color: $backgroundColor_grey_dark;
 
+    @include flex($flex-direction: column, $flex-wrap: wrap, $justify-content:center);
     display: none;
-    flex-direction: column;
-    justify-content: center;
-    flex-wrap: wrap;
 
     transition: width 0.15s ease-in;
 }
@@ -21,9 +19,7 @@
     flex: 2;
     padding: 8px 8px;
 
-    display: flex;
-	flex-direction: column;
-	align-items: center;
+    @include flex($flex-direction: column, $align-items:center);
 
     overflow: hidden;
     overflow-y: scroll;
@@ -40,10 +36,7 @@
 		display: block;
 		padding: 16px 8px;
 		
-		color: $dark_text_color;
-		font-family: $main_font_family;
 		text-transform: uppercase;
-		font-size: $main_font_size;
 
         &:hover {
             background-color: $ui_background_hover_color;

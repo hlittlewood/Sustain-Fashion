@@ -3,28 +3,22 @@
 	height: 80px;
 	padding: 4px 64px;
 	
-	background-color:  $ui_background_color;
+	background-color: $backgroundColor_grey_dark;
 	
-	border-bottom: 1px solid;
-	border-color: $border_color;
+	border-bottom: 1px solid $border_color;
 
 	will-change: height;
 }
 
 .desktop_navbar {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
+	@include flex($justify-content: space-between, $align-items: center);
 
 	height: 100%;
 }
 
 .mobile_navbar {
+	@include flex($justify-content: space-between, $align-items: center);
 	display: none;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
 
 	height: 100%;
 }
@@ -32,9 +26,7 @@
 .navbar_menu {
 	flex: 1 1 0;
 	
-	display: flex;
-	flex-direction: row;
-	align-items: center;
+	@include flex($align-items: center);
 }
 
 .primary_menu {
@@ -47,14 +39,11 @@
 
 .menu_item {
 	a {
-		text-decoration: none;
 		display: block;
 		padding: 16px 8px;
 		
-		color: $dark_text_color;
-		font-family: $main_font_family;
+		text-decoration: none;
 		text-transform: uppercase;
-		font-size: $main_font_size;
 	}
 }
 
@@ -64,17 +53,12 @@
 	cursor: pointer;
 
 	svg {
-		fill: $dark_text_color;
+		fill: $textColor_black;
 	}
 }
 
-.brand_logo {
-	height: 64px;
-	
-	font-family: $brand_font_family;
-	font-size: 40px;
-	line-height: 62px;
-	text-transform: uppercase;
+.brand_logo {	
+	@extend .h2;
 	text-decoration: none;
 	text-align: center;
 	
@@ -90,11 +74,10 @@
 	right: 0;
 	padding: 8px 64px;
 
+	@include flex($align-items: stretch);
 	display: none;
-	flex-direction: row;
-	align-items: stretch;
 
-	background-color: $ui_background_color;
+	background-color: $backgroundColor_grey_dark;
 	border-bottom: 1px solid;
 	border-color: $border_color;
 
@@ -159,13 +142,8 @@
 		flex: 2 2 0;
 		order: 2;
 		
-
-		height: 51px;
 		font-size: 24px;
-		line-height: 51px;
-
-		align-self: flex-start;
-
+		line-height: 28px;
 	}
 }
 

@@ -1,15 +1,19 @@
 // Typography
+$font_family_main: 'Inter var', 'Inter', sans-serif;
+$font_family_brand: 'Squada One', 'Inter var', 'Inter', sans-serif;
 
-$brand_font_family: 'Squada One', 'Inter var', 'Inter', sans-serif;
-$brand_font_weight: 100;
+$font_weight_main: 400;
+$font_weight_brand: 100;
 
-$main_font_family: 'Inter var', 'Inter', sans-serif;
-$main_font_weight: 400;
-$main_font_size: 16px;
+$font_size_main: 16px;
+$font_size_h1: 48px;
+$font_size_h2: 40px;
+$font_size_h3: 32px;
 
-$section_font_size: 40px;
-$title_font_size: 32px;
-
+$line_height_main: 20px;
+$line_height_h1: 52px;
+$line_height_h2: 44px;
+$line_height_h3: 36px;
 
 // Scale & Sizes
 
@@ -20,14 +24,36 @@ $mobile_breakpoint: 425px;
 
 // Colours
 
-$page_background_color: #F9FAFB;
-$ui_background_color: #F3F4F6;
+// Colours borrowed from the Tailwind palette.
+$color_grey_50: #F9FAFB;
+$color_grey_100: #F3F4F6;
+$color_grey_200: #E5E7EB;
+$color_grey_300: #D1D5DB;
+$color_grey_400: #9CA3AF;
+$color_grey_500: #6B7280;
+$color_grey_600: #4B5563;
+$color_grey_700: #374151;
+$color_grey_800: #1F2937;
+$color_grey_900: #111827;
+
+$brand_color: #164E63;
+
+$backgroundColor_grey: $color_grey_50;
+$backgroundColor_grey_dark: $color_grey_100;
+
+$backgroundColor_buttonPrimary: $brand_color;
+
+$textColor_white: $color_grey_50;
+$textColor_black: $color_grey_900;
+
+$buttonColor_default: $color_grey_200;
+$buttonColor_default_border: $color_grey_400;
+$buttonColor_defaultHover: $color_grey_400;
+
+$buttonColor_primary: $brand_color;
+$buttonColor_primary_border: $brand_color;
+$buttonColor_primaryHover: #0E7490;
 
 $ui_background_hover_color: #E5E7EB;
 
 $border_color: #D4D4D8;
-
-$brand_color: #164E63;
-
-$dark_text_color: #111827;
-$light_text_color: $ui_background_color;
