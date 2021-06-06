@@ -30,6 +30,24 @@ footer {
     }
 }
 
+.socials_list {
+    @include flex($gaps: 4px)
+}
+
+.socials_button {
+    height: 42px;
+    width: 42px;
+    padding: 4px !important;
+
+    background-color: $buttonColor_default;
+    border: 2px solid $buttonColor_default_border;
+    border-radius: 4px;
+
+    a {
+        padding: 0;
+    }
+}
+
 @media all and (max-width: $tablet_breakpoint) {
     footer {
         gap: 8px;
